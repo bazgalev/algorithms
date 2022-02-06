@@ -3,7 +3,8 @@
   "type": "package",
   "autoload": {
     "psr-4": {
-      "Sorting\\": "src/"
+      "Sorting\\": "src/",
+      "Tests\\": "tests/"
     }
   },
   "require-dev": {
