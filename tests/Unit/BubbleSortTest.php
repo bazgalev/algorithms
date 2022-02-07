@@ -9,40 +9,16 @@ use Sorting\BubbleSorting;
 
 class BubbleSortTest extends TestCase
 {
+    use SortingData;
+
     /**
      * @test
      * @covers \Sorting\BubbleSorting::sort
      */
     public function sorted_correctly(): void
     {
-        $input = [
-            54,
-            32,
-            75,
-            1,
-            0,
-            45,
-            -1,
-            0,
-            87,
-            66,
-        ];
+        $sorting = new BubbleSorting();
 
-        $sorted = (new BubbleSorting())->sort($input);
-
-        $output = [
-            -1,
-            0,
-            0,
-            1,
-            32,
-            45,
-            54,
-            66,
-            75,
-            87,
-        ];
-
-        $this->assertEquals($output, $sorted);
+        $this->assertEquals($this->output, $sorting->sort($this->input));
     }
 }
