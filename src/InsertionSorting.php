@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Sorting;
 
+/**
+ * Сортировка вставками
+ * Сложность O(n^2)
+ */
 class InsertionSorting
 {
     /**
