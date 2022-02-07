@@ -18,7 +18,6 @@ class SelectionSorting
      */
     public function sort(array $items): array
     {
-
         for ($i = 0; $i < count($items); $i++) {
             $minIndex = $i;
             for ($j = $i; $j < count($items); $j++) {
