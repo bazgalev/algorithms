@@ -5,20 +5,19 @@ declare(strict_types=1);
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Sorting\SelectionSorting;
+use Sorting\BubbleSorting;
 
-class SelectionSortTest extends TestCase
+class BubbleSortingTest extends TestCase
 {
     use SortingData;
 
     /**
-     * @group selection
      * @test
-     * @covers \Sorting\SelectionSorting::sort
+     * @covers \Sorting\BubbleSorting::sort
      */
     public function sorted_correctly(): void
     {
-        $sorting = new SelectionSorting();
+        $sorting = new BubbleSorting();
 
         $this->assertEquals($this->output, $sorting->sort($this->input));
     }

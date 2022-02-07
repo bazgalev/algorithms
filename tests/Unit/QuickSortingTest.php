@@ -19,6 +19,7 @@ class QuickSortingTest extends TestCase
     public function sorting_successful(): void
     {
         $sorting = new QuickSorting();
+
         $this->assertEquals($this->output, $sorting->sort($this->input));
     }
 }

@@ -7,7 +7,7 @@ namespace Tests\Unit;
 use PHPUnit\Framework\TestCase;
 use Sorting\InsertionSorting;
 
-class InsertionSortTest extends TestCase
+class InsertionSortingTest extends TestCase
 {
     use SortingData;
 
