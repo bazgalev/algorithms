@@ -19,9 +19,9 @@ class BubbleSorting
     public function sort(array $items): array
     {
         for ($i = 0; $i < count($items); $i++) {
-            for ($j = $i + 1; $j < count($items); $j++) {
-                if ($items[$i] > $items[$j]) {
-                    $this->swap($items[$i], $items[$j]);
+            for ($j = 1; $j < count($items) - $i; $j++) {
+                if ($items[$j] < $items[$j - 1]) {
+                    $this->swap($items[$j], $items[$j - 1]);
                 }
             }
         }
