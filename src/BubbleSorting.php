@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Sorting;
 
 /**
- * Сортировка пузырьком
- * Сложность O(n^2)
+ * Сортировка пузырьком.
+ * Сложность O(n^2).
  */
 class BubbleSorting
 {
