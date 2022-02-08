@@ -20,7 +20,7 @@ class MergeSorting
             return $items;
         }
 
-        $mid = (int)round(count($items) / 2);
+        $mid = (int)round((count($items) - 1) / 2);
 
         $left = array_slice($items, 0, $mid);
         $right = array_slice($items, $mid);

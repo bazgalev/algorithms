@@ -12,6 +12,7 @@ class BubbleSortingTest extends TestCase
     use SortingData;
 
     /**
+     * @group bubble
      * @test
      * @covers \Sorting\BubbleSorting::sort
      */
