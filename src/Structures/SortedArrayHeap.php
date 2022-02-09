@@ -7,6 +7,10 @@ namespace Sorting\Structures;
 use Exception;
 use Sorting\WithSwap;
 
+/**
+ * Реализация кучи на основе отсортированного массива.
+ * Быстрое извлечение, медленное добавление.
+ */
 class SortedArrayHeap
 {
     use WithSwap;
