@@ -54,7 +54,8 @@ class BinaryTreeHeap
             throw new Exception('Heap is empty');
         }
 
-        $this->swap($this->items[$this->count() - 1], $this->items[0]);
+        $last = $this->count() - 1;
+        $this->swap($this->items[$last], $this->items[0]);
         $result = array_pop($this->items);
 
         $i = 0;
@@ -62,12 +63,12 @@ class BinaryTreeHeap
             $j = $i;
 
             $left = 2 * $i + 1;
-            if ($left < $this->count() && $this->items[$left] < $this->items[$j]) {
+            if ($left < $last && $this->items[$left] < $this->items[$j]) {
                 $j = $left;
             }
 
             $right = 2 * $i + 2;
-            if ($right < $this->count() && $this->items[$right] < $this->items[$j]) {
+            if ($right < $last && $this->items[$right] < $this->items[$j]) {
                 $j = $right;
             }
 
