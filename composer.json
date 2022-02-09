@@ -1,9 +1,9 @@
 {
-  "name": "bazgalev/sorting",
+  "name": "bazgalev/algorithms",
   "type": "package",
   "autoload": {
     "psr-4": {
-      "Sorting\\": "src/",
+      "Algorithms\\": "src/",
       "Tests\\": "tests/"
     }
   },

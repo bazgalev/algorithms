@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Sorting;
+namespace Algorithms;
 
-use Sorting\Structures\BinaryTreeHeap;
+use Algorithms\Structures\BinaryTreeHeap;
 
 class HeapSorting implements SortingInterface
 {

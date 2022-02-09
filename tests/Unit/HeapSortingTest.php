@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use Sorting\HeapSorting;
+use Algorithms\HeapSorting;
 use PHPUnit\Framework\TestCase;
 
 class HeapSortingTest extends TestCase
@@ -12,7 +12,7 @@ class HeapSortingTest extends TestCase
     /**
      * @group heap
      * @test
-     * @covers \Sorting\HeapSorting::sort
+     * @covers \Algorithms\HeapSorting::sort
      */
     public function sorted_correctly(): void
     {

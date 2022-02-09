@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Sorting\Structures;
+namespace Algorithms\Structures;
 
 use Exception;
-use Sorting\WithSwap;
+use Algorithms\WithSwap;
 
 class BinaryTreeHeap
 {

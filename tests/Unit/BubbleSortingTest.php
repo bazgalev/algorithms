@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Sorting\BubbleSorting;
+use Algorithms\BubbleSorting;
 
 class BubbleSortingTest extends TestCase
 {
@@ -14,7 +14,7 @@ class BubbleSortingTest extends TestCase
     /**
      * @group bubble
      * @test
-     * @covers \Sorting\BubbleSorting::sort
+     * @covers \Algorithms\BubbleSorting::sort
      */
     public function sorted_correctly(): void
     {

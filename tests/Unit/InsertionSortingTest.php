@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Sorting\InsertionSorting;
+use Algorithms\InsertionSorting;
 
 class InsertionSortingTest extends TestCase
 {
@@ -14,7 +14,7 @@ class InsertionSortingTest extends TestCase
     /**
      * @group insertion
      * @test
-     * @covers \Sorting\InsertionSorting::sort
+     * @covers \Algorithms\InsertionSorting::sort
      */
     public function sorted_correctly(): void
     {

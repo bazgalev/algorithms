@@ -5,15 +5,15 @@ declare(strict_types=1);
 namespace Tests\Unit\Structures;
 
 use PHPUnit\Framework\TestCase;
-use Sorting\Structures\BinaryTreeHeap;
+use Algorithms\Structures\BinaryTreeHeap;
 
 class BinaryTreeHeapTest extends TestCase
 {
 
     /**
-     * @covers \Sorting\Structures\BinaryTreeHeap::pop
-     * @covers \Sorting\Structures\BinaryTreeHeap::push
-     * @covers \Sorting\Structures\BinaryTreeHeap::isEmpty
+     * @covers \Algorithms\Structures\BinaryTreeHeap::pop
+     * @covers \Algorithms\Structures\BinaryTreeHeap::push
+     * @covers \Algorithms\Structures\BinaryTreeHeap::isEmpty
      * @test
      */
     public function heap_is_correctly(): void

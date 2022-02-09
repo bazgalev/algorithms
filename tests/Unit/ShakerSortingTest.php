@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Sorting\ShakerSorting;
+use Algorithms\ShakerSorting;
 
 class ShakerSortingTest extends TestCase
 {
@@ -14,7 +14,7 @@ class ShakerSortingTest extends TestCase
     /**
      * @group shaker
      * @test
-     * @covers \Sorting\ShakerSorting::sort
+     * @covers \Algorithms\ShakerSorting::sort
      */
     public function sorted_correctly(): void
     {

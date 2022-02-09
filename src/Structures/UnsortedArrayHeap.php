@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Sorting\Structures;
+namespace Algorithms\Structures;
 
-use Sorting\WithSwap;
+use Algorithms\WithSwap;
 
 /**
  * Примитивная реализации кучи на базе неотсортированного массива.

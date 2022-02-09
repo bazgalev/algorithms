@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sorting;
+namespace Algorithms;
 
 /**
  * Разновидность сортировки пузырьком - шейкерная сортировка.

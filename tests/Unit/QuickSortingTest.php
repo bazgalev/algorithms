@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Sorting\QuickSorting;
+use Algorithms\QuickSorting;
 
 class QuickSortingTest extends TestCase
 {
@@ -14,7 +14,7 @@ class QuickSortingTest extends TestCase
     /**
      * @group quick
      * @test
-     * @covers \Sorting\QuickSorting::sort
+     * @covers \Algorithms\QuickSorting::sort
      */
     public function sorting_successful(): void
     {

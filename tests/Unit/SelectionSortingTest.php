@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Sorting\SelectionSorting;
+use Algorithms\SelectionSorting;
 
 class SelectionSortingTest extends TestCase
 {
@@ -14,7 +14,7 @@ class SelectionSortingTest extends TestCase
     /**
      * @group selection
      * @test
-     * @covers \Sorting\SelectionSorting::sort
+     * @covers \Algorithms\SelectionSorting::sort
      */
     public function sorted_correctly(): void
     {
