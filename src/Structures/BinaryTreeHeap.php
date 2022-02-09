@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Sorting\Structures;
 
+use Exception;
 use Sorting\WithSwap;
 
 /**
@@ -44,13 +45,51 @@ class BinaryTreeHeap
         }
     }
 
+    /**
+     * @throws Exception
+     */
     public function pop(): int
     {
+        if ($this->isEmpty()) {
+            throw new Exception('Heap is empty');
+        }
+
+        $this->swap($this->items[$this->count() - 1], $this->items[0]);
+        $result = array_pop($this->items);
+
+        $i = 0;
+        while (true) {
+            $j = $i;
+
+            $left = 2 * $i + 1;
+            if ($left < $this->count() && $this->items[$left] < $this->items[$j]) {
+                $j = $left;
+            }
+
+            $right = 2 * $i + 2;
+            if ($right < $this->count() && $this->items[$right] < $this->items[$j]) {
+                $j = $right;
+            }
+
+            if ($j === $i) {
+                break;
+            }
+
+            $this->swap($this->items[$i], $this->items[$j]);
+            $i = $j;
+        }
+
+        return $result;
     }
 
     private function count(): int
     {
         return count($this->items);
+    }
+
+    private function isEmpty(): bool
+    {
+        return empty($this->items);
     }
 
     public function getItems(): array
