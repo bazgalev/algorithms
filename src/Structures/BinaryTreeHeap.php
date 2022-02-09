@@ -15,6 +15,9 @@ class BinaryTreeHeap
 
     private array $items = [];
 
+    /**
+     * Сложность добавления нового элемента: O(log n).
+     */
     public function push(int $value): void
     {
         $current = $this->count();
