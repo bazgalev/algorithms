@@ -7,9 +7,6 @@ namespace Sorting\Structures;
 use Exception;
 use Sorting\WithSwap;
 
-/**
- * 1 3 6 4 7 10 9 11 | 2
- */
 class BinaryTreeHeap
 {
     use WithSwap;
@@ -46,6 +43,8 @@ class BinaryTreeHeap
     }
 
     /**
+     * Сложность изъятия элемента O(log n).
+     *
      * @throws Exception
      */
     public function pop(): int
@@ -54,29 +53,44 @@ class BinaryTreeHeap
             throw new Exception('Heap is empty');
         }
 
-        $last = $this->count() - 1;
-        $this->swap($this->items[$last], $this->items[0]);
+        $i = 0;
+        $this->swap($this->items[$this->count() - 1], $this->items[$i]);
         $result = array_pop($this->items);
 
-        $i = 0;
         while (true) {
+            // Текущий минимум
             $j = $i;
 
+            // Рассматриваем левого ребенка
             $left = 2 * $i + 1;
-            if ($left < $last && $this->items[$left] < $this->items[$j]) {
+
+            // Если он существует
+            // и меньше текущего минимума
+            if ($left < $this->count() && $this->items[$left] < $this->items[$j]) {
+                // Обновляем минимум
                 $j = $left;
             }
 
+            // Рассматриваем правого ребенка
             $right = 2 * $i + 2;
-            if ($right < $last && $this->items[$right] < $this->items[$j]) {
+
+            // Если он существует
+            // и меньше текущего минимума
+            if ($right < $this->count() && $this->items[$right] < $this->items[$j]) {
+                // Обновляем минимум
                 $j = $right;
             }
 
+            // Если после проверок минимум не обновился,
+            // свойство кучи восстановлено,
+            // выходим из цикла
             if ($j === $i) {
                 break;
             }
 
+            // Меняем местами рассматриваемый узел и текущий минимум
             $this->swap($this->items[$i], $this->items[$j]);
+            // Устанавливаем новый рассматриываемый узел
             $i = $j;
         }
 
