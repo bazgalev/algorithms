@@ -8,7 +8,7 @@ namespace Sorting;
  * Простая реализация алгоритма быстрой сортировки.
  * Сложность: O(n log n).
  */
-class QuickSorting
+class QuickSorting implements SortingInterface
 {
     public function sort(array $items): array
     {

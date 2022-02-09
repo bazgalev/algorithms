@@ -8,7 +8,7 @@ namespace Sorting;
  * Сортировка слиянием.
  * Сложность O(n log n).
  */
-class MergeSorting
+class MergeSorting implements SortingInterface
 {
     /**
      * @param int[] $items

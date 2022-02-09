@@ -8,7 +8,7 @@ namespace Sorting;
  * Разновидность сортировки пузырьком - шейкерная сортировка.
  * Сложность O(n^2).
  */
-class ShakerSorting
+class ShakerSorting implements SortingInterface
 {
     use WithSwap;
 

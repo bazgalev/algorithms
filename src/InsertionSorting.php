@@ -8,7 +8,7 @@ namespace Sorting;
  * Сортировка вставками
  * Сложность O(n^2)
  */
-class InsertionSorting
+class InsertionSorting implements SortingInterface
 {
     /**
      * @param int[] $items

@@ -8,7 +8,7 @@ namespace Sorting;
  * Сортировка выбором
  * Сложность O(n^2)
  */
-class SelectionSorting
+class SelectionSorting implements SortingInterface
 {
     use WithSwap;
 
