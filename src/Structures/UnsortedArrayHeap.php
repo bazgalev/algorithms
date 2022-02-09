@@ -9,7 +9,7 @@ use Sorting\WithSwap;
 /**
  * Примитивная реализации кучи на базе неотсортированного массива.
  */
-class Heap
+class UnsortedArrayHeap
 {
     use WithSwap;
 
