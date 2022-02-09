@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Algorithms;
+namespace Algorithms\Utils;
 
 trait WithSwap
 {

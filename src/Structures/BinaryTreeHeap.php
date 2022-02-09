@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Algorithms\Structures;
 
 use Exception;
-use Algorithms\WithSwap;
+use Algorithms\Utils\WithSwap;
 
 class BinaryTreeHeap
 {

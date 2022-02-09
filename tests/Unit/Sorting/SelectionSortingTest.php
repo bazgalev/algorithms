@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit;
+namespace Tests\Unit\Sorting;
 
 use PHPUnit\Framework\TestCase;
-use Algorithms\InsertionSorting;
+use Algorithms\Sorting\SelectionSorting;
 
-class InsertionSortingTest extends TestCase
+class SelectionSortingTest extends TestCase
 {
     use SortingData;
 
     /**
-     * @group insertion
+     * @group selection
      * @test
-     * @covers \Algorithms\InsertionSorting::sort
+     * @covers \Algorithms\Sorting\SelectionSorting::sort
      */
     public function sorted_correctly(): void
     {
-        $sorting = new InsertionSorting();
+        $sorting = new SelectionSorting();
 
         $this->assertEquals($this->output, $sorting->sort($this->input));
     }

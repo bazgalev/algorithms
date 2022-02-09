@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Algorithms;
+namespace Algorithms\Sorting;
+
+use Algorithms\Sorting\SortingInterface;
 
 /**
  * Простая реализация алгоритма быстрой сортировки.

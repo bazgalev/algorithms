@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Algorithms\Structures;
 
-use Algorithms\WithSwap;
+use Algorithms\Utils\WithSwap;
 
 /**
  * Примитивная реализации кучи на базе неотсортированного массива.

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit;
+namespace Tests\Unit\Sorting;
 
 use PHPUnit\Framework\TestCase;
-use Algorithms\MergeSorting;
+use Algorithms\Sorting\MergeSorting;
 
 class MergeSortingTest extends TestCase
 {
@@ -14,7 +14,7 @@ class MergeSortingTest extends TestCase
     /**
      * @group merge
      * @test
-     * @covers \Algorithms\MergeSorting::sort
+     * @covers \Algorithms\Sorting\MergeSorting::sort
      */
     public function sorted_correctly(): void
     {

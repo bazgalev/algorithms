@@ -1,9 +1,10 @@
 <?php
 
-namespace Tests\Unit;
+namespace Tests\Unit\Sorting;
 
-use Algorithms\HeapSorting;
+use Algorithms\Sorting\HeapSorting;
 use PHPUnit\Framework\TestCase;
+use Tests\Unit\Sorting\SortingData;
 
 class HeapSortingTest extends TestCase
 {
@@ -12,7 +13,7 @@ class HeapSortingTest extends TestCase
     /**
      * @group heap
      * @test
-     * @covers \Algorithms\HeapSorting::sort
+     * @covers \Algorithms\Sorting\HeapSorting::sort
      */
     public function sorted_correctly(): void
     {

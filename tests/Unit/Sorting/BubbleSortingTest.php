@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit;
+namespace Tests\Unit\Sorting;
 
 use PHPUnit\Framework\TestCase;
-use Algorithms\SelectionSorting;
+use Algorithms\Sorting\BubbleSorting;
 
-class SelectionSortingTest extends TestCase
+class BubbleSortingTest extends TestCase
 {
     use SortingData;
 
     /**
-     * @group selection
+     * @group bubble
      * @test
-     * @covers \Algorithms\SelectionSorting::sort
+     * @covers \Algorithms\Sorting\BubbleSorting::sort
      */
     public function sorted_correctly(): void
     {
-        $sorting = new SelectionSorting();
+        $sorting = new BubbleSorting();
 
         $this->assertEquals($this->output, $sorting->sort($this->input));
     }
