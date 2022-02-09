@@ -97,18 +97,13 @@ class BinaryTreeHeap
         return $result;
     }
 
-    private function count(): int
+    public function count(): int
     {
         return count($this->items);
     }
 
-    private function isEmpty(): bool
+    public function isEmpty(): bool
     {
         return empty($this->items);
-    }
-
-    public function getItems(): array
-    {
-        return $this->items;
     }
 }
