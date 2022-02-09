@@ -13,18 +13,22 @@ class UnsortedArrayHeap
 {
     use WithSwap;
 
+    /**
+     * @var int[]
+     */
     private array $items;
 
-    public function __construct(array $items)
-    {
-        $this->items = $items;
-    }
-
+    /**
+     * O(1)
+     */
     public function push(int $value): void
     {
         $this->items[] = $value;
     }
 
+    /**
+     * O(n)
+     */
     public function pop(): int
     {
         $min = 0;
