@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Algorithms\Sorting;
 
-use Algorithms\Sorting\SortingInterface;
-
 /**
  * Сортировка вставками
  * Сложность O(n^2)

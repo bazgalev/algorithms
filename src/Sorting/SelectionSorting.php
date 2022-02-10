@@ -4,17 +4,12 @@ declare(strict_types=1);
 
 namespace Algorithms\Sorting;
 
-use Algorithms\Sorting\SortingInterface;
-use Algorithms\Utils\WithSwap;
-
 /**
  * Сортировка выбором
  * Сложность O(n^2)
  */
 class SelectionSorting implements SortingInterface
 {
-    use WithSwap;
-
     /**
      * @param array $items
      * @return array
@@ -28,7 +23,7 @@ class SelectionSorting implements SortingInterface
                     $minIndex = $j;
                 }
             }
-            $this->swap($items[$i], $items[$minIndex]);
+            swap($items[$i], $items[$minIndex]);
         }
 
         return $items;

@@ -5,12 +5,9 @@ declare(strict_types=1);
 namespace Algorithms\Structures;
 
 use Exception;
-use Algorithms\Utils\WithSwap;
 
 class BinaryTreeHeap
 {
-    use WithSwap;
-
     private array $items = [];
 
     /**
@@ -37,7 +34,7 @@ class BinaryTreeHeap
                 break;
             }
 
-            $this->swap($this->items[$parent], $this->items[$current]);
+            swap($this->items[$parent], $this->items[$current]);
             $current = $parent;
         }
     }
@@ -54,7 +51,7 @@ class BinaryTreeHeap
         }
 
         $i = 0;
-        $this->swap($this->items[$this->count() - 1], $this->items[$i]);
+        swap($this->items[$this->count() - 1], $this->items[$i]);
         $result = array_pop($this->items);
 
         while (true) {
@@ -89,7 +86,7 @@ class BinaryTreeHeap
             }
 
             // Меняем местами рассматриваемый узел и текущий минимум
-            $this->swap($this->items[$i], $this->items[$j]);
+            swap($this->items[$i], $this->items[$j]);
             // Устанавливаем новый рассматриываемый узел
             $i = $j;
         }

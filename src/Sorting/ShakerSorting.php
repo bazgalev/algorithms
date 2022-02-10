@@ -4,17 +4,12 @@ declare(strict_types=1);
 
 namespace Algorithms\Sorting;
 
-use Algorithms\Sorting\SortingInterface;
-use Algorithms\Utils\WithSwap;
-
 /**
  * Разновидность сортировки пузырьком - шейкерная сортировка.
  * Сложность O(n^2).
  */
 class ShakerSorting implements SortingInterface
 {
-    use WithSwap;
-
     /**
      * @param int[] $items
      * @return int[]
@@ -27,13 +22,13 @@ class ShakerSorting implements SortingInterface
         for ($i = $left; $i < $right; $i++) {
             for ($j = $left; $j < $right; $j++) {
                 if ($items[$j] > $items[$j + 1]) {
-                    $this->swap($items[$j], $items[$j + 1]);
+                    swap($items[$j], $items[$j + 1]);
                 }
             }
             $right--;
             for ($j = $right; $j > $left; $j--) {
                 if ($items[$j] < $items[$j - 1]) {
-                    $this->swap($items[$j], $items[$j - 1]);
+                    swap($items[$j], $items[$j - 1]);
                 }
             }
         }

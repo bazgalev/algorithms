@@ -4,15 +4,12 @@ declare(strict_types=1);
 
 namespace Algorithms\Structures;
 
-use Algorithms\Utils\WithSwap;
-
 /**
  * Примитивная реализации кучи на базе неотсортированного массива.
  * Быстрое добавление, медленное извлечение.
  */
 class UnsortedArrayHeap
 {
-    use WithSwap;
 
     /**
      * @var int[]
@@ -40,7 +37,7 @@ class UnsortedArrayHeap
             }
         }
 
-        $this->swap($this->items[count($this->items) - 1], $this->items[$min]);
+        swap($this->items[count($this->items) - 1], $this->items[$min]);
 
         return array_pop($this->items);
     }

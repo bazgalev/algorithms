@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Algorithms\Structures;
 
 use Exception;
-use Algorithms\Utils\WithSwap;
 
 /**
  * Реализация кучи на основе отсортированного массива.
@@ -13,8 +12,6 @@ use Algorithms\Utils\WithSwap;
  */
 class SortedArrayHeap
 {
-    use WithSwap;
-
     /**
      * @var int[]
      */
@@ -52,7 +49,7 @@ class SortedArrayHeap
 
         $i = $count - 1;
         while ($this->items[$i - 1] > $this->items[$i] && $i >= 0) {
-            $this->swap($this->items[$i - 1], $this->items[$i]);
+            swap($this->items[$i - 1], $this->items[$i]);
             $i--;
         }
     }
