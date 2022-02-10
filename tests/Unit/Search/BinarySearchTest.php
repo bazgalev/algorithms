@@ -29,6 +29,22 @@ class BinarySearchTest extends TestCase
      * @covers \Algorithms\Search\BinarySearch::search
      * @test
      */
+    public function search__on_one_element_is_correctly(): void
+    {
+        $needle = 99;
+
+        $search = new BinarySearch();
+
+        $result = $search->search($needle, [99]);
+
+        $this->assertNotNull($result);
+        $this->assertEquals(0,  $result);
+    }
+
+    /**
+     * @covers \Algorithms\Search\BinarySearch::search
+     * @test
+     */
     public function negative_search_is_correctly(): void
     {
         $needle = 9999;

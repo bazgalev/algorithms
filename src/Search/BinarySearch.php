@@ -23,7 +23,7 @@ class BinarySearch implements SearchInterface
         $left = 0;
         $right = count($haystack) - 1;
 
-        while ($left < $right) {
+        while ($left <= $right) {
             $median = (int)(($left + $right) / 2);
 
             if ($needle < $haystack[$median]) {
