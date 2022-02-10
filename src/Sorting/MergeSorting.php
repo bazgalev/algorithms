@@ -6,7 +6,11 @@ namespace Algorithms\Sorting;
 
 /**
  * Сортировка слиянием.
- * Сложность O(n log n).
+ *
+ * Алгоритм состоит в разделении массива пополам, сортировке половин и их слиянии.
+ *
+ * Сложность: O(n log n).
+ * Память: O(n).
  */
 class MergeSorting implements SortingInterface
 {

@@ -8,7 +8,11 @@ use Algorithms\Structures\BinaryTreeHeap;
 
 /**
  * Сортировка кучей (пирамидальная сортировка).
+ *
+ * Строим из массива кучу, по очереди извлекаем минимум кучи.
+ *
  * Сложность: O(n*log*n).
+ * Память: O(1).
  */
 class HeapSorting implements SortingInterface
 {

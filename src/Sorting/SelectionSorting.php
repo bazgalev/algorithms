@@ -6,7 +6,11 @@ namespace Algorithms\Sorting;
 
 /**
  * Сортировка выбором.
- * Сложность O(n^2).
+ *
+ * На i-ом шаге алгоритма находим минимальный среди последних n−i+1, и меняем его местами с i-ым элементом в массиве.
+ *
+ * Сложность: O(n^2).
+ * Память: O(1).
  */
 class SelectionSorting implements SortingInterface
 {

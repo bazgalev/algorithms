@@ -6,7 +6,9 @@ namespace Algorithms\Sorting;
 
 /**
  * Разновидность сортировки пузырьком - шейкерная сортировка.
+ *
  * Сложность O(n^2).
+ * Память: O(1).
  */
 class ShakerSorting implements SortingInterface
 {
