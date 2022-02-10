@@ -9,5 +9,5 @@ interface SearchInterface
     /**
      * @param int[] $haystack
      */
-    public function search(int $needle, array $haystack): int;
+    public function search(int $needle, array $haystack): ?int;
 }
