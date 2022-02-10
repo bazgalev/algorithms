@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Algorithms\Sorting;
 
 /**
- * Сортировка выбором
- * Сложность O(n^2)
+ * Сортировка выбором.
+ * Сложность O(n^2).
  */
 class SelectionSorting implements SortingInterface
 {

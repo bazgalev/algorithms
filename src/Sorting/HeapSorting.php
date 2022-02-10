@@ -6,6 +6,10 @@ namespace Algorithms\Sorting;
 
 use Algorithms\Structures\BinaryTreeHeap;
 
+/**
+ * Сортировка кучей (пирамидальная сортировка).
+ * Сложность: O(n*log*n).
+ */
 class HeapSorting implements SortingInterface
 {
     public function sort(array $items): array
