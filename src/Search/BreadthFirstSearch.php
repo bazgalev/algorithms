@@ -18,6 +18,9 @@ class BreadthFirstSearch
     private array $visited = [];
     private array $graph;
 
+    /**
+     * @param array $graph в виде списка смежных вершин.
+     */
     public function __construct(array $graph)
     {
         $this->graph = $graph;
