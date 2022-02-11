@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Algorithms\Search;
+namespace Algorithms\Search\Collections;
 
 interface SearchInterface
 {

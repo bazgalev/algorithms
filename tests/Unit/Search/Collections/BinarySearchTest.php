@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit\Search;
+namespace Tests\Unit\Search\Collections;
 
-use Algorithms\Search\BinarySearch;
+use Algorithms\Search\Collections\BinarySearch;
 use PHPUnit\Framework\TestCase;
 
 class BinarySearchTest extends TestCase
@@ -12,7 +12,7 @@ class BinarySearchTest extends TestCase
     private array $haystack = [12, 23, 23, 33, 54, 56, 65, 77, 99, 100, 123, 432];
 
     /**
-     * @covers \Algorithms\Search\BinarySearch::search
+     * @covers \Algorithms\Search\Collections\BinarySearch::search
      * @test
      */
     public function search_is_correctly(): void

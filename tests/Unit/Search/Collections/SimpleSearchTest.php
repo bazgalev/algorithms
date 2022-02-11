@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit\Search;
+namespace Tests\Unit\Search\Collections;
 
-use Algorithms\Search\SimpleSearch;
+use Algorithms\Search\Collections\SimpleSearch;
 use PHPUnit\Framework\TestCase;
 
 class SimpleSearchTest extends TestCase
 {
     /**
-     * @covers \Algorithms\Search\SimpleSearch::search
+     * @covers \Algorithms\Search\Collections\SimpleSearch::search
      * @test
      */
     public function search_is_correctly(): void
