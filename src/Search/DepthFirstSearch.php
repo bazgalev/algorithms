@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Algorithms\Search;
 
 /**
- * Поиск в глубину
+ * Поиск в глубину.
  */
 class DepthFirstSearch
 {
