@@ -9,7 +9,7 @@ namespace Algorithms\Search;
  */
 class DepthFirstSearch
 {
-    private array $marked = [];
+    private array $visited = [];
     private array $graph;
 
     public function __construct(array $graph)
@@ -19,13 +19,23 @@ class DepthFirstSearch
 
     public function search(int $root, callable $callback): void
     {
-        $this->marked[$root] = true;
+        $this->visit($root);
         $callback($root);
 
         foreach ($this->graph[$root] as $v) {
-            if (!isset($this->marked[$v])) {
+            if (!$this->visited($v)) {
                 $this->search($v, $callback);
             }
         }
+    }
+
+    private function visit(int $vertex): void
+    {
+        $this->visited[$vertex] = true;
+    }
+
+    private function visited(int $vertex): bool
+    {
+        return isset($this->visited[$vertex]);
     }
 }
