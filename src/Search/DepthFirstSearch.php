@@ -6,6 +6,10 @@ namespace Algorithms\Search;
 
 /**
  * Поиск в глубину.
+ *
+ * Чаще всего используется для изучения свойств графа.
+ *
+ * Сложность: O(V+E).
  */
 class DepthFirstSearch
 {
