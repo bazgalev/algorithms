@@ -25,9 +25,9 @@ class BreadthFirstSearch
         while (!empty($queue)) {
             $node = array_shift($queue);
             foreach ($node as $v) {
-                if (!isset($this->visited[$v])) {
-                    $queue[] = $this->graph[$v];
+                if (!$this->visited($v)) {
                     $this->visit($v, $callback);
+                    $queue[] = $this->graph[$v];
                 }
             }
         }
@@ -37,5 +37,10 @@ class BreadthFirstSearch
     {
         $this->visited[$vertex] = true;
         $callback($vertex);
+    }
+
+    public function visited(int $vertex): bool
+    {
+        return isset($this->visited[$vertex]);
     }
 }
